@@ -279,6 +279,9 @@ body {
     background-color: rgb(237, 82, 5);
     border: none;
     border-radius: 5px;
+    color: white;
+    font-weight:bold;
+    font-size: 600 ;
 }
 
 
