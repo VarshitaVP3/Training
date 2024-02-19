@@ -1,0 +1,75 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+ /*styling the header*/
+ .header{
+    background-color: blue;
+    height: 80px;
+    display: flex;
+    
+    
+}
+
+.tilting
+{
+    text-align: center;
+    margin-left: 30%;
+    justify-content: center;
+    font-size: large;
+}
+
+.tilting h3{
+    font-weight: 300px;
+}
+
+.logo img{
+
+    padding: 15px;
+    width: 200px;
+    height:auto ;
+}
+
+.button
+{
+   
+        color: white;
+        top: 0px;
+        display: inline;
+        padding-right: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+ 
+
+}
+
+.btn button{
+
+    background-color: aqua;
+    height: 30px;
+    width: 80px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10vh;
+
+}
+
+header{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+/* form styling */
+
+.container{
+    justify-content: center;
+    text-align: center;
+    
+}

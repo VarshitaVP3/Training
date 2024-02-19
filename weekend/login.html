@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login form</title>
+</head>
+
+
+<body>
+    
+<!--   
+    <div class="bgcolor">
+      
+     
+  
+            <div class="container">
+                <img src="Images/main-logo.svg" class="logo" alt="Logo">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>         
+        
+    </div> 
+
+ 
+
+    </div> -->
+
+    
+
+        <div class="background-image"></div>
+        
+        <div class="logo-container">
+            <img src="Images/main-logo.svg" class="logo" alt="Logo">
+        </div>
+        
+        <div class="container">
+          
+            <div class="login-form">
+               
+                
+                <div class="login-heading">
+                    <h3>Login</h3>
+                </div>
+                <div class="subheading">
+                    <p>Hello welcome Lorem is simply a dummy text</p>
+                </div>
+        
+                <form class="form-login">
+                    <h4>
+                        User
+                    </h4>
+        
+                    <input type="text" placeholder="Your name" id="username">
+                    <!-- <label for="Password"  class="heading" >Password</label> -->
+                    <h4>Password</h4>
+                    <input type="password" placeholder="********" id="pasw">
+                    <br>
+                    <button class="btn" id="loginsubmit">Login Your Account</button>
+        
+                </form>  
+                   
+                </form>
+        
+            </div>
+        </div>
+
+
+        <script>
+            
+            document.getElementById("loginsubmit").addEventListener("click", function (event) {
+                    event.preventDefault();
+                    validating();
+                });
+                
+                function validating() {
+                    const userName = document.getElementById("username").value.trim();
+                    const passw = document.getElementById("pasw").value.trim();
+                
+                    if (userName === "" || userName === null) {
+                        alert("Please enter user name");
+                    } else if (passw === "" || passw === null) {
+                        alert("Please enter password");
+                    } else {
+                        window.location.href = "profile.html";
+                    }
+                }
+                
+                
+        </script>
+
+    <script src="script.js" ></script>
+      
+</body>
+</html>

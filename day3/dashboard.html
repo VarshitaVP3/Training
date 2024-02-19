@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<!-- styling the html file using css  -->
+<style>
+
+    body,html{
+        padding: 0px;
+        margin: 0px;
+        background-color: rgb(216, 199, 199);
+    }
+
+    .header
+    {
+        background-color: rgb(16, 16, 150);
+        padding-left: 25px;
+        height: 50px;
+        padding-top: 10px;
+        justify-content: center;
+     
+    }
+
+    .header img{
+        width: 80px ;
+        
+    }
+
+    .header p{
+        color: aliceblue    ;
+    }
+
+    .main-header{
+        background-color: blue;
+        height: 80px;
+        display: flex;
+        padding-left: 25px;
+        justify-content: center;
+    }
+
+    .main-header img {
+        padding-top: 15px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .main-header p{
+        color: white;
+        top: 0px;
+        display: inline;
+        padding-right: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+    }
+
+    .sub-header
+    {
+        background-color: rgb(9, 9, 119);
+        color: rgb(243, 232, 232);
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+
+    }
+
+ 
+
+    .sub-header ul li{
+        display: inline-block;
+        padding: 25px;
+    }
+
+    .sub-header ul li a{
+        cursor: pointer;
+    }
+
+    .sub-header ul li p{
+        text-transform:uppercase ;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .sub-header a p {
+        color: white;
+
+    }
+    .sub-header ul li a {
+        text-decoration: none;
+    }
+
+    .sub-header ul li a :hover{
+        color: yellow;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .main-wrapper
+    {
+        display: flex;
+        padding: 45px;
+        gap: 3rem;
+        justify-content: space-between;
+        
+    }
+
+   /* .main-wrapper>div :hover{
+
+        transform: translateY(-5px);
+    } */
+
+    .wrappwer1{
+        width: 350px; 
+        height: 130px; 
+        background-color: red; 
+        color: white; 
+        font-size: 2rem; 
+        transition:  margin 0.3s ease-in;
+       
+    }
+
+    .wrappwer1:hover ,.wrappwer2:hover , .wrappwer3:hover , .wrappwer4:hover{
+        margin-top: -5px;
+       /* height: 140px; */
+    }
+
+
+
+
+    .wrappwer1 p {
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .wrappwer2{
+        width: 350px; 
+        height: 130px; 
+        background-color: rgb(75, 75, 174); 
+        color: white; 
+        font-size: 2rem;
+    }
+    .wrappwer2 p {
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .wrappwer3{
+        width: 350px; 
+        height: 130px; 
+        background-color: rgb(227, 163, 44); 
+        color: white; 
+        font-size: 2rem;
+    }
+    .wrappwer3 p {
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    .wrapper-header h3{
+
+        text-align: center;
+        margin-top: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: xx-large;
+        font-weight: 600;
+
+    }
+
+    .wrappwer4{
+        width: 350px; 
+        height: 130px; 
+        background-color: rgb(139, 115, 70); 
+        color: white; 
+        font-size: 2rem;
+    }
+    .wrappwer4 p {
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(238, 232, 232);
+        color: rgb(107, 102, 102);
+        text-align: center;
+        box-shadow: none;
+     }
+
+     .subdiv
+     {
+        justify-content: center;
+        padding: 30px;
+        background-color: azure;
+        margin: 5px 40px  ;
+        height: 150px;
+        display: flex;
+        
+     }
+
+     .subdiv .imaging img
+     {
+        width: 250px;
+        height: auto;
+        padding-bottom: 50px;
+        padding-top: 0px;
+     }
+
+     .passage
+     {
+        margin-left: 25px;
+        gap:  45px;
+     }
+
+     .subheading h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       margin-top: 0px;
+     }
+
+     .subheading .dummy p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+  
+
+</style>
+
+<body>
+    <!-- <div class="header">
+        <div class="main-header">
+            <img src="images.png" alt="sysfore_logo" width="100px" height="100px">
+            <p >user-info</p>
+        </div>
+    </div> -->
+
+    <div class="main-header">
+        <img src="images.png" alt="sysfore_logo" >
+        <p style="margin-left: auto;">Varshita V P
+            <!-- Varshita.vp@sysfore.com -->
+    </p>
+    <!-- <p>Varshita.vp@sysfore.com</p> -->
+            
+        
+    </div>
+
+    <div class="sub-header">
+        <section>
+            <ul>
+                <li><a href="https://www.sysfore.com/"><p>Dashboard</p></a></li>
+                <li><a href="https://www.sysfore.com/"><p>Profile</p></a></li>
+                <li><a href ="https://www.sysfore.com/"><p>Calender</p></a></li>
+                <li><a href="https://www.sysfore.com/"><p>Report</p></a></li>
+                <li><a href="https://www.sysfore.com/"><p>Setting</p></a></li>
+                <li><a href="https://www.sysfore.com/"><p>Help Center</p></a></li>
+                <li><a href="https://www.sysfore.com/"><p>Logout</p></a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="wrappwer1" background-color="green
+        "><p>Dashboard Items 1</p>
+            <div class="wrapper-header"><h3>28</h3></div>
+        </div>
+        <div class="wrappwer2" ><p>Dashboard Items 2</p>
+            <div class="wrapper-header"><h3>45</h3></div></div>
+        <div class="wrappwer3"><p>Dashboard Items 3</p>
+            <div class="wrapper-header"><h3>124</h3></div></div>
+        <div class="wrappwer4"><p>Dashboard Items 4</p>
+            <div class="wrapper-header"><h3>84</h3></div></div>
+    </div>
+
+   <div class="subdiv">
+        <div class="imaging">
+            <img src="divimage.png">
+        </div>
+        <div class="passage">
+            <div class="subheading">
+                <h2>
+                    Your Heading
+                </h2>
+            </div>
+            <div class="dummy">
+               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente esse dolor rem quaerat sint odio excepturi voluptate facere quis accusamus dicta itaque consectetur quos assumenda debitis architecto, autem culpa.
+                </p>
+            </div>
+        </div>
+   </div>
+
+    <div class="footer">
+        <p>Lorem Ipsum is simply a dummy text</p>
+    </div>
+
+
+</body>
+</html>
